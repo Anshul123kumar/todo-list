@@ -1,0 +1,60 @@
+.addTodoTaskWpr {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.addTodoInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.addTodoButton {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #222;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.addTodoButtonText {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .addTodoTaskWpr {
+        gap: 8px;
+    }
+
+    .addTodoInput, .addTodoButton {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .addTodoButton {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 320px) {
+    .addTodoInput, .addTodoButton {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .addTodoButton {
+        font-size: 12px;
+    }
+
+    .addTodoTaskWpr {
+        margin-top: 12px;
+    }
+}

@@ -1,0 +1,91 @@
+.todoListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 240px;
+    overflow: scroll;
+    scrollbar-width: thin;
+}
+
+.todoListContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.checkbox {
+    height: 15px;
+    width: 15px;
+}
+
+.todoListItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.completedTodoListItem {
+    background-color: #cdf9da;
+}
+
+.todoItemText {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.todoListTask {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .todoListContainer {
+        max-height: 200px;
+    }
+
+    .todoListItem {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .todoItemText {
+        font-size: 12px; 
+    }
+
+    .checkbox {
+        height: 12px;
+        width: 12px;
+    }
+
+    .todoListTask {
+        gap: 8px; 
+    }
+}
+
+@media (max-width: 320px) {
+    .todoListContainer {
+        max-height: 180px;
+        gap: 8px;
+    }
+
+    .todoListItem {
+        padding: 4px;
+    }
+
+    .todoItemText {
+        font-size: 11px;
+    }
+
+    .checkbox {
+        height: 10px;
+        width: 10px;
+    }
+
+    .todoListTask {
+        gap: 6px;
+    }
+}

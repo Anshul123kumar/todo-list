@@ -1,0 +1,76 @@
+.todoHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    gap: 50px;
+}
+
+.todoInput {
+    flex: 1;
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.filterButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.filterButton {
+    padding: 10px;
+    border: 1px solid #222;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.activeFilterButton {
+    background-color: #2e76e3;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .todoHeader {
+        gap: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filterButtons {
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+
+    .filterButton {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .todoInput {
+        width: 100%;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 320px) {
+    .todoHeader {
+        padding: 8px 0;
+        gap: 15px;
+    }
+
+    .todoInput {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .filterButton {
+        padding: 6px;
+        font-size: 10px; 
+    }
+
+    .filterButtons {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}
